@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Armata&family=Caveat&family=Dawning+of+a+New+Day&family=Hanken+Grotesk:wght@300&family=Maitree&family=Monsieur+La+Doulaise&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="photo/Aha-Soft-Standard-Transport-Plane.256.png">
+<link rel="manifest" href="/site.webmanifest">
+
+  <title>Destionation App</title>
+</head>
+
+<body>
+  <h1 class="keyboard-title"><%= greeting %>, Alma!</h1>
+
+  <!-- Cards for destinations -->
+  <div class="card-deck">
+    <% weatherData.forEach((weather, index) => { %>
+      <div class="card card-<%= index + 1 %>">
+        <div class="card-body">
+          <p class="card-text1">You have <%= daysToDestinations[index].days %> days to:
+        <br>✈️ </p>
+          <h2 class="card-title"><%= destinations[index].name %></h2>
+          <p class="card-text"> <%= weather.temperature %>°C</p>
+        </div>
+      </div>
+    <% }); %>
+  </div>
+
+</body>
+
+</html>
+
