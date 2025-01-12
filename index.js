@@ -9,9 +9,9 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 const destinations = [
-  { name: 'Pula', lat: 44.52599, lon: 13.505302, date: new Date('2024-06-04') },  // Dodajte željeni datum
-  { name: 'Paris', lat: 48.8566, lon: 2.3522, date: new Date('2024-06-14') }, // Dodajte željeni datum
-  { name: 'Amsterdam', lat: 52.3676, lon: 4.9041, date: new Date('2024-12-30') } // Dodajte željeni datum
+  { name: 'Pula', lat: 44.52599, lon: 13.505302, date: new Date('2025-06-04') },  
+  { name: 'Paris', lat: 48.8566, lon: 2.3522, date: new Date('2025-06-14') }, 
+  { name: 'Amsterdam', lat: 52.3676, lon: 4.9041, date: new Date('2025-12-30') }
 ];
 
 
